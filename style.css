@@ -1,0 +1,122 @@
+/* Removing default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  background-color: #23304c;
+  height: 100vh;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+.logo {
+  width: 30px;
+  cursor: pointer;
+}
+.navbar-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.navbar-container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-container li a:hover {
+  color: #0d9488;
+  transform: scale(1.11);
+}
+
+/* Button design */
+.btn-primary {
+  padding: 10px 30px;
+  font-weight: 600;
+  background-color: #0d9488;
+  text-transform: uppercase;
+  color: inherit;
+  border-radius: 30px;
+  transition: 0.4s transform;
+}
+.btn-primary:hover {
+  transform: scale(1.06);
+}
+
+/* Content */
+
+.content {
+  display: flex;
+  padding-top: 10%;
+}
+.content-left,
+.content-right {
+  flex: 1;
+}
+.content-left img {
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
+.content-right h2 {
+  font-size: 32px;
+  width: 400px;
+  font-weight: 400;
+  margin: 20px 00;
+}
+.content-right h2 span {
+  text-decoration: underline;
+  text-decoration-color: #0d9488;
+}
+/* Waves Styles */
+.content-right {
+  position: relative;
+}
+
+#circle {
+  position: absolute;
+  width: 400px;
+  bottom: 10px;
+}
+
+#wave {
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  right: 0;
+}
